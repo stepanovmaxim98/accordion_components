@@ -6,7 +6,7 @@
       rgba(255, 255, 255, 0) 30%,
       #f9eeff 30%
     ),
-    url("/assets/images/background-pattern-desktop.svg") top center no-repeat;
+    url("../assets/images/background-pattern-desktop.svg") top center no-repeat;
   background-size: cover;
 }
 .question-container {
@@ -52,7 +52,7 @@
   font-size: 16px;
   transition: 0.3s all;
 }
-.question-text:hover{
+.question-text:hover {
   color: #af23e4;
 }
 .answer-block {
@@ -86,7 +86,7 @@
 .question-plus::before {
   transform: rotate(90deg);
 }
-.question-minus{
+.question-minus {
   position: relative;
   width: 30px;
   height: 30px;
@@ -98,7 +98,7 @@
   justify-content: center;
 }
 .question-minus::before,
-.question-plus::after{
+.question-plus::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -118,4 +118,3 @@
     width: 150px;
   }
 }
-
