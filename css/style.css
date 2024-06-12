@@ -1,0 +1,121 @@
+.main {
+  padding: 70px 10px 30px 10px;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 30%,
+      #f9eeff 30%
+    ),
+    url("/assets/images/background-pattern-desktop.svg") top center no-repeat;
+  background-size: cover;
+}
+.question-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 8px 3px rgba(34, 60, 80, 0.2);
+  margin-bottom: 50px;
+}
+.question-title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+.question-heading {
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+  hyphens: auto;
+  font-weight: 900;
+  font-size: 35px;
+  color: #38183d;
+}
+.question-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+  padding-bottom: 12px;
+  /* border-bottom: 1px solid #ba97bf3e; */
+  cursor: pointer;
+}
+.question-btn {
+  flex-shrink: 0;
+  padding: 3px;
+}
+.question-text {
+  color: #38253b;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s all;
+}
+.question-text:hover{
+  color: #af23e4;
+}
+.answer-block {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 12px 0;
+  color: #865c8c;
+  opacity: 0.9;
+}
+.question-plus {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #af23e4;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+.question-plus::before,
+.question-plus::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: white;
+}
+.question-plus::before {
+  transform: rotate(90deg);
+}
+.question-minus{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #311136;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+.question-minus::before,
+.question-plus::after{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: white;
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  .main {
+    padding: 90px 10px 30px 10px;
+    height: 100%;
+  }
+
+  .question-container {
+    max-width: 250px;
+  }
+  .question-title {
+    width: 150px;
+  }
+}
+
